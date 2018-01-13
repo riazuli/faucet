@@ -1,0 +1,352 @@
+/*===========================
+Template Name: Faucet
+Author: Riazul
+=============================*/
+
+
+/*===========================
+Fonts
+=============================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i');
+
+/*===========================
+Base CSS
+=============================*/
+
+html,
+body {
+    height: 100%
+}
+
+body {
+
+    background-image: url("../img/bg.jpg");
+    height: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    line-height: 1.7;
+    font-size: 14px;
+    overflow:hidden;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    margin: 0 0 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+
+
+a:hover,
+a:focus {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+
+/*===========================
+Padding, Margin
+=============================*/
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.no-padding-top {
+    padding-top: 0px;
+}
+
+.spacer-90 {
+    height: 90px;
+}
+
+.spacer-25 {
+    height: 30px;
+}
+
+.spacer-30 {
+    height: 30px;
+}
+
+.spacer-40 {
+    height: 40px;
+}
+
+.spacer-70 {
+    height: 70px;
+}
+
+.spacer-50 {
+    height: 50px;
+}
+
+.margin-80 {
+    margin: 80px 0px;
+}
+
+.margin-t30 {
+    margin-top: 30px;
+}
+
+
+/*===========================
+Background Images
+=============================*/
+
+
+
+
+
+/*===========================
+Style CSS
+=============================*/
+
+img.droplet {
+    position: absolute;
+    right: 1em;
+    top: 0%;
+    max-width: 75px;
+    width: 30%;
+    margin-top: -40%;
+    -webkit-animation: much_coins linear 6s infinite;
+    animation: much_coins linear 6s infinite;
+}
+
+img.droplet:nth-of-type(2) {
+    -webkit-animation-delay: 2s;
+    -webkit-animation-name: much_coins2;
+    animation-delay: 2s;
+    animation-name: much_coins2;
+}
+
+img.droplet:nth-of-type(3) {
+    -webkit-animation-delay: 4s;
+    -webkit-animation-name: much_coins3;
+    animation-delay: 4s;
+    animation-name: much_coins3;
+}
+
+@keyframes much_coins {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes much_coins2 {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes much_coins3 {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        transform: rotate(90deg);
+    }
+}
+
+@-webkit-keyframes much_coins {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes much_coins2 {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        -webkit-transform: rotate(30deg);
+    }
+}
+
+@-webkit-keyframes much_coins3 {
+    from {
+        top: 0%;
+        margin-top: -40%;
+    }
+    to {
+        top: 100%;
+        margin-top: 0%;
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    img.droplet {
+        width: 100%;
+        display: block;
+        -webkit-animation: none;
+        animation: none;
+        position: static;
+        margin: 2em auto 0 auto;
+    }
+
+    img.droplet:nth-of-type(2),
+    img.droplet:nth-of-type(3) {
+        display: none;
+    }
+}
+
+.snowflakes {
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+
+i,
+i:after,
+i:before {
+    background: white;
+}
+
+i {
+    display: inline-block;
+    -webkit-animation: snowflakes 3s linear 2s 20;
+    -moz-animation: snowflakes 3s linear 2s 20;
+    position: relative;
+}
+
+i:after,
+i:before {
+    height: 100%;
+    width: 100%;
+    content: ".";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: rotate(120deg);
+}
+
+i:before {
+    -webkit-transform: rotate(240deg);
+}
+
+@-webkit-keyframes snowflakes {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+    }
+    100% {
+        -webkit-transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+    }
+    ;
+}
+
+.snowflakes i:nth-child(3n) {
+    width: 16px;
+    height: 4px;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 30;
+    -webkit-transform-origin: right -45px;
+}
+
+.snowflakes i:nth-child(3n+1) {
+    width: 24px;
+    height: 6px;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: 45;
+    -webkit-transform-origin: right -30px;
+}
+
+.snowflakes i:nth-child(3n+2) {
+    width: 32px;
+    height: 8px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 60;
+    -webkit-transform-origin: right -15px;
+}
+
+
+/* different delays so they don't all start at the same time */
+
+.snowflakes i:nth-child(7n) {
+    opacity: .3;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
+}
+
+.snowflakes i:nth-child(7n+1) {
+    opacity: .4;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.snowflakes i:nth-child(7n+2) {
+    opacity: .5;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-timing-function: linear;
+}
+
+.snowflakes i:nth-child(7n+3) {
+    opacity: .6;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: ease-in;
+}
+
+.snowflakes i:nth-child(7n+4) {
+    opacity: .7;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-timing-function: linear;
+}
+
+.snowflakes i:nth-child(7n+5) {
+    opacity: .8;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.snowflakes i:nth-child(7n+6) {
+    opacity: .9;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-timing-function: ease-in;
+}
