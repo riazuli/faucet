@@ -26,7 +26,6 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: #777;
     line-height: 1.7;
@@ -121,6 +120,70 @@ Background Images
 /*===========================
 Style CSS
 =============================*/
+
+
+.header-area {
+    background-color:  #e0ebe7;
+}
+
+.logo a img {
+    max-width: 60px;
+}
+
+.main-menu ul {
+    list-style:  none;
+    padding:  0;
+    margin: 0;
+    text-align: right;
+}
+
+.main-menu ul li {
+    display:  inline-block;
+}
+
+.main-menu ul li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #020202;
+    padding: 30px 18px;
+    display:  inline-block;
+    font-weight: 600;
+}
+
+.logo a {
+    display:  inline-block;
+    padding: 10px 0px;
+}
+
+.footer {
+    position:  absolute;
+    left:  0;
+    bottom:  0;
+    background-color:  #233B47;
+    width: 100%;
+    padding:  20px 0px;
+    font-size: 16px;
+    color: #cccccc;
+    border-top: 10px solid #028002;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 img.droplet {
     position: absolute;
