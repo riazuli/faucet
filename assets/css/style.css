@@ -1,18 +1,11 @@
-/*===========================
-Template Name: Faucet
-Author: Riazul
-=============================*/
+/*=========================== Template Name: Faucet Author: Riazul =============================*/
 
 
-/*===========================
-Fonts
-=============================*/
+/*=========================== Fonts =============================*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i');
 
-/*===========================
-Base CSS
-=============================*/
+/*=========================== Base CSS =============================*/
 
 html,
 body {
@@ -20,19 +13,13 @@ body {
 }
 
 body {
-
-    background-image: url("../img/bg.jpg");
-    height: 100%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Roboto', sans-serif;
-    color: #777;
+    color: #333;
     line-height: 1.7;
     font-size: 14px;
-    overflow:hidden;
+    overflow-x: hidden;
+    height: 100%;
 }
-
 
 img {
     max-width: 100%;
@@ -51,9 +38,6 @@ h6 {
     line-height: 1.4;
 }
 
-
-
-
 a:hover,
 a:focus {
     text-decoration: none
@@ -64,9 +48,7 @@ a:focus {
 }
 
 
-/*===========================
-Padding, Margin
-=============================*/
+/*=========================== Padding, Margin =============================*/
 
 .section-padding {
     padding: 70px 0px;
@@ -109,21 +91,20 @@ Padding, Margin
 }
 
 
-/*===========================
-Background Images
-=============================*/
+/*=========================== Background Images =============================*/
+
+.content-wrapp {
+    background-image: url("../img/bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
-
-
-
-/*===========================
-Style CSS
-=============================*/
-
+/*=========================== Style CSS =============================*/
 
 .header-area {
-    background-color:  #e0ebe7;
+    background-color: #e0ebe7;
 }
 
 .logo a img {
@@ -131,14 +112,14 @@ Style CSS
 }
 
 .main-menu ul {
-    list-style:  none;
-    padding:  0;
+    list-style: none;
+    padding: 0;
     margin: 0;
     text-align: right;
 }
 
 .main-menu ul li {
-    display:  inline-block;
+    display: inline-block;
 }
 
 .main-menu ul li a {
@@ -146,44 +127,27 @@ Style CSS
     text-transform: uppercase;
     color: #020202;
     padding: 30px 18px;
-    display:  inline-block;
+    display: inline-block;
     font-weight: 600;
 }
 
 .logo a {
-    display:  inline-block;
+    display: inline-block;
     padding: 10px 0px;
 }
 
 .footer {
-    position:  absolute;
-    left:  0;
-    bottom:  0;
-    background-color:  #233B47;
+    /* position: absolute;
+     */
+    left: 0;
+    bottom: 0;
+    background-color: #233B47;
     width: 100%;
-    padding:  20px 0px;
+    padding: 20px 0px;
     font-size: 16px;
     color: #cccccc;
     border-top: 10px solid #028002;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 img.droplet {
     position: absolute;
@@ -283,7 +247,6 @@ img.droplet:nth-of-type(3) {
 }
 
 @media all and (max-width: 450px) {
-
     img.droplet {
         width: 100%;
         display: block;
@@ -292,7 +255,6 @@ img.droplet:nth-of-type(3) {
         position: static;
         margin: 2em auto 0 auto;
     }
-
     img.droplet:nth-of-type(2),
     img.droplet:nth-of-type(3) {
         display: none;
@@ -301,7 +263,7 @@ img.droplet:nth-of-type(3) {
 
 .snowflakes {
     width: 100%;
-    height: 1200px;
+    height: 100%;
     position: absolute;
     top: -90px;
     left: 0;
@@ -412,4 +374,174 @@ i:before {
     opacity: .9;
     -webkit-animation-delay: 3.5s;
     -webkit-animation-timing-function: ease-in;
+}
+
+.faucet-form {
+    background-color: #fff;
+    padding: 30px 45px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.faucet-form input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+input#cryptocoin_submit {}
+
+.faucet-form input[type="submit"] {
+    background-color: #007F0C;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.section-title h2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.section-title {
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div#captcha {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.donate-box {
+    background-color: #fff;
+    padding: 30px 40px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.donate-box {}
+
+.donate-box p span {
+    color: #007E13;
+    text-transform: none;
+    font-size:  18px;
+    display:  block;
+}
+
+.info-box {
+    background-color: #fff;
+    padding: 35px 45px;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.info-box p {
+    margin-bottom: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.faucet-form {}
+
+.info-box a {
+    color: #007F0C;
+    font-weight: 700;
+}
+.mobile-menu{display: none;}
+
+.main-menu ul li {
+    position:  relative;
+}
+
+.main-menu ul li
+ .sub-menu {
+    position:  absolute;
+    left: -100px;
+    top: 85px;
+    background-color: #DFEAE6;
+    z-index:  9;
+    text-align: left;
+    width: 200px;
+    opacity:  0;
+    visibility: hidden;
+}
+
+.main-menu ul li .sub-menu li {
+    display:  block;
+}
+
+.main-menu ul li .sub-menu li a {
+    display:  block;
+    padding:  12px;
+    font-weight:  500;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-menu ul li .sub-menu li a:hover {
+    background-color: #ccc;
+}
+
+.main-menu ul li:hover .sub-menu {
+    left:  0;
+    visibility:  visible;
+    opacity: 1;
+}
+
+.mobile-menu {
+    position:  absolute;
+    right:  0;
+    top: 20px;
+    z-index: 9;
+    width: 100%;
+}
+
+.slicknav_menu {
+    background: no-repeat;
+}
+
+.slicknav_nav {
+    background-color: #DFEAE6;
+    padding: 10px;
+}
+
+.slicknav_nav a {
+    color: #333;
+    font-weight:  700;
+    font-size: 16px;
+}
+
+.slicknav_nav ul {
+    margin: 0;
+}
+
+.slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+}
+
+.slicknav_nav a:hover {
+    border-radius: 0px;
+}
+
+slicknav_item .fa.fa-caret-down {
+    display: none;
+}
+
+.mobile-menu span.fa.fa-caret-down {
+    display: none;
 }

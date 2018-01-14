@@ -10,30 +10,59 @@
     <link rel="apple-touch-icon" href="assets/img/apple-icon-180x180.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-    <div class="snowflakes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="header-area">
+   <div class="header-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6 col-xs-4">
                     <div class="logo"><a href="//faucet.xpcoin.io"><img src="assets/img/apple-icon-180x180.png" alt=""></a></div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-sm-6 col-xs-8">
+
+                        <div class="mobile-menu"></div>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About <span class="fa fa-caret-down"></span></a></li>
-                            <li><a href="">Get XP <span class="fa fa-caret-down"></span></a></li>
-                            <li><a href="">Wallet <span class="fa fa-caret-down"></span></a></li>
-                            <li><a href="">Shop With XP</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">FAQ <span class="fa fa-caret-down"></span></a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="https://www.xpcoin.io">Home</a></li>
+                            <li><a href="#">About <span class="fa fa-caret-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="https://www.xpcoin.io/about-xp/">About XP</a></li>
+                                    <li><a href="https://www.xpcoin.io/team/">Team</a></li>
+                                    <li><a href="https://www.xpcoin.io/ecosystem-map/">Ecosystem Map</a></li>
+                                    <li><a href="https://www.xpcoin.io/roadmap/">Road Map</a></li>
+                                    <li><a href="https://media.xpcoin.io/docs/XP-WhitePaper-v3.pdf">Whitepaper</a></li>
+                                    <li><a href="https://chainz.cryptoid.info/xp/">Block Explorer</a></li>
+                                    <li><a href="https://github.com/BitBenderMedia/XP-Graphics">Media Kit</a></li>
+                                    <li><a href="https://pool.xpcoin.io/">Pool Miner</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Get XP <span class="fa fa-caret-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="//www.xpcoin.io/exchanges/">Exchanges</a></li>
+                                    <li><a href="//pool1.xpcoin.io/">Web Mining</a></li>
+                                    <li><a href="//faucet.xpcoin.io/">Faucet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Wallet <span class="fa fa-caret-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="https://webwallet.xpcoin.io/">Web Wallet</a></li>
+                                    <li><a href="https://www.xpcoin.io/downloads/">Desktop Wallet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://xp.market/">Shop With XP</a></li>
+                            <li><a href="https://www.xpcoin.io/news/">News</a></li>
+                            <li><a href="#">FAQ <span class="fa fa-caret-down"></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="https://www.xpcoin.io/faq/">General FAQ</a></li>
+                                    <li><a href="https://www.xpcoin.io/xp-community-questions/">XP Community Questions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.xpcoin.io/contact/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,13 +82,15 @@
 
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <form method="post" action="">
-                        <input class="standard_text" id="cryptocoin_address" name="cryptocoin_address" type="text" value="" placeholder="Enter your XP address here">
-                        <div id="captcha" class="simple-captcha">
-                            <img src="./libraries/simple-captcha/simple-php-captcha.php?_CAPTCHA&amp;s=xpmultifaucet&amp;t=0.45080100+1515815653" alt="[captcha]"> </div>
-                        <input class="standard_text" id="simple_captcha_code" name="captcha_code" type="text" value="" placeholder="Enter the code you see above">
-                        <input class="standard_button" id="cryptocoin_submit" name="cryptocoin_submit" type="submit" value="Get coins">
-                    </form>
+                    <div class="faucet-form">
+                        <form method="post" action="">
+                            <input class="standard_text" id="cryptocoin_address" name="cryptocoin_address" type="text" value="" placeholder="Enter your XP address here">
+                            <div id="captcha" class="simple-captcha">
+                                <img src="http://faucet.xpcoin.io/libraries/simple-captcha/simple-php-captcha.php?_CAPTCHA&amp;s=xpmultifaucet&amp;t=0.45080100+1515815653" alt="[captcha]"> </div>
+                            <input class="standard_text" id="simple_captcha_code" name="captcha_code" type="text" value="" placeholder="Enter the code you see above">
+                            <input class="standard_button" id="cryptocoin_submit" name="cryptocoin_submit" type="submit" value="Get coins">
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -102,6 +133,7 @@
     </div>
     <script src="assets/js/jquery1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
